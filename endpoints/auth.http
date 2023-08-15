@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+POST {{baseUrl}}/{{urlPath}}/signup
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "username": "Semperf13",
+  "password": "Starwar",
+  "specialty": "Especialista Ventrilocuista"
+}
+
+###
+POST {{baseUrl}}/{{urlPath}}/signin
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "username": "Semperf13",
+  "password": "Starwar"
+}
+
+###
+GET {{baseUrl}}/{{urlPath}}/signout
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
